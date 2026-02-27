@@ -1,0 +1,10 @@
+.todaysbox{
+    padding: 16px;
+    margin-top: 24px;
+    border-radius: 8px;
+    border: 1px solid rgb(115, 115, 255);
+    justify-self: center;
+    width: 90%;
+    height: auto;
+    background-color: rgb(8, 18, 44);
+}

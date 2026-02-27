@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com");
+@import url("https://fonts.gstatic.com");
+@import url("https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap");
+
+.logo{
+    font-family: "Changa One", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    padding: 24px;
+    justify-self: center;
+    color: rgb(255, 255, 255);
+}

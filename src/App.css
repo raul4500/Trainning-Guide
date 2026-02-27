@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #050505;
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+}
+
+.header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.header p {
+  opacity: 0.8;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.day-selector {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 16px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  backdrop-filter: blur(10px);
+}
+
+select {
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background: #00c896;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #00a67d;
+}
+
+.workout-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 25px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.workout-card h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.exercise-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.exercise {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.3s ease;
+}
+
+.exercise:hover {
+  transform: translateX(5px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.exercise-name {
+  font-weight: bold;
+}
+
+.exercise-info {
+  opacity: 0.8;
+}

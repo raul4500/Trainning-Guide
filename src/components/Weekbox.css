@@ -1,0 +1,44 @@
+.weekbox{
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid rgb(115, 115, 255);
+    justify-self: center;
+    width: 90%;
+    height: auto;
+    background-color: rgb(8, 18, 44);
+}
+
+.days{
+    display: flex;
+    justify-content: space-between;
+}
+
+.day{
+    border-radius: 50px;
+    width: 48px;
+    height: auto;
+    justify-items: center;
+}
+
+.today{
+    color:rgb(123, 123, 255);
+    border: 1px solid rgb(115, 115, 255);
+    background-color:rgb(0, 0, 0);
+    border-radius: 6px;
+    width: 48px;
+    height: auto;
+    justify-items: center;
+    padding-bottom: 4px;
+}
+
+.line{
+    border: 1px solid rgb(115, 115, 255);
+    width: 100%;
+    margin: 4px;
+}
+
+.short-line{
+    border: 1px solid rgb(115, 115, 255);
+    width: 60%;
+    margin: 4px;
+}
