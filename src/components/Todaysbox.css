@@ -1,10 +1,32 @@
+@import url("https://fonts.googleapis.com");
+@import url("https://fonts.gstatic.com");
+@import url("https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap");
+
 .todaysbox{
-    padding: 16px;
+    padding: 16px 24px;
     margin-top: 24px;
     border-radius: 8px;
-    border: 1px solid rgb(115, 115, 255);
+    border: 1px solid rgb(98, 54, 255);
     justify-self: center;
     width: 90%;
     height: auto;
-    background-color: rgb(8, 18, 44);
+    background-color: rgb(18, 18, 18);
+    display: flex;
+    justify-content: space-between;
+}
+
+.muscles{
+    font-family: "Changa One", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+}
+
+button{
+    font-family: "Changa One", sans-serif;
+    font-style: normal;
+    background-color:rgb(98, 54, 255)
+}
+
+.buttons{
+    
 }
