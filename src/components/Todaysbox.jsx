@@ -4,7 +4,7 @@ function TodaysBox(){
     return (
         <div className="todaysbox">
             <div className="muscles">
-                PEITO | BÍCEPS
+                PEITO | TRÍCEPS
             </div>
             <div className="buttons">
             <button>
