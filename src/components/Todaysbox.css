@@ -11,7 +11,7 @@
     width: 90%;
     height: auto;
     background-color: rgb(18, 18, 18);
-    display: flex;
+    display: block;
     justify-content: space-between;
 }
 
@@ -21,12 +21,19 @@
     font-style: normal;
 }
 
-button{
+button, a{
+    color: white;
     font-family: "Changa One", sans-serif;
     font-style: normal;
     background-color:rgb(98, 54, 255)
 }
 
+.viewmore{
+    background: none;
+    line-height: 40px;
+}
+
 .buttons{
-    
+    display: flex;
+    justify-content: space-between;
 }
