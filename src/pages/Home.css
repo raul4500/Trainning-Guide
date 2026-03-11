@@ -1,5 +1,5 @@
 .home{
     width: clamp(300px, 400px, 500px);
-    justify-self: center;
+    margin-inline: auto;
     height: 100vh;
 }
