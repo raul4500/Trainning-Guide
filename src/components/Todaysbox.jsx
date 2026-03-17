@@ -1,11 +1,17 @@
-import './Todaysbox.css'
+import './Todaysbox.css';
+import { Link } from 'react-router';
+import workout from "../data/workout.json";
 
-function TodaysBox() {
+function TodaysBox({day}) {
+
+    const today = workout.cycle_days[day];
+
+    const url = `/start/${day}`
     return (
         <div className="todaysbox">
             <div className="buttons">
                 <div className="muscles">
-                    CHEST | TRICEPS
+                    {today.name}
                 </div>
                 <button className="viewmore">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
@@ -13,9 +19,9 @@ function TodaysBox() {
                     </svg>
                 </button>
             </div>
-            <button>
-                <a href="teste">S T A R T</a>
-            </button>
+            
+            <Link to={url} className="start">Start</Link>
+            
 
         </div>
     )

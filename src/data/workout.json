@@ -1,0 +1,163 @@
+{
+  "cycle_days": [
+    {
+      "day": 1,
+      "type": "musculacao",
+      "name": "Upper 1",
+      "exercises": [
+        {
+          "name": "Puxada triângulo",
+          "sets": [
+            { "reps": "10-12", "kg": 30, "rest": 30 },
+            { "reps": "6", "kg": 45, "rest": 45 },
+            { "reps": "9-12", "kg": 60, "rest": 100 },
+            { "reps": "9-12", "kg": 60, "rest": 100 },
+            { "reps": "9-12", "kg": 60, "rest": 100 }
+          ]
+        },
+        {
+          "name": "Elevação lateral polia unilateral",
+          "sets": [
+            { "reps": "6", "kg": 6, "rest": 60 },
+            { "reps": "9-12", "kg": 8, "rest": 100 },
+            { "reps": "9-12", "kg": 8, "rest": 100 }
+          ]
+        },
+        {
+          "name": "Crucifixo no voador",
+          "sets": [
+            { "reps": "6", "kg": 20, "rest": 60 },
+            { "reps": "9-12", "kg": 30, "rest": 100 },
+            { "reps": "9-12", "kg": 30, "rest": 100 },
+            { "reps": "9-12", "kg": 30, "rest": 100 }
+          ]
+        },
+        {
+          "name": "T Bar Row",
+          "sets": [
+            { "reps": "9-12", "kg": 40, "rest": 100 },
+            { "reps": "9-12", "kg": 50, "rest": 100 },
+            { "reps": "9-12", "kg": 50, "rest": 100 }
+          ]
+        },
+        {
+          "name": "Supino inclinado máquina",
+          "sets": [
+            { "reps": "9-12", "kg": 35, "rest": 100 },
+            { "reps": "9-12", "kg": 45, "rest": 100 },
+            { "reps": "9-12", "kg": 45, "rest": 100 }
+          ]
+        },
+        {
+          "name": "Tríceps francês",
+          "sets": [
+            { "reps": "9-12", "kg": 12, "rest": 100 },
+            { "reps": "9-12", "kg": 16, "rest": 100 },
+            { "reps": "9-12", "kg": 16, "rest": 100 }
+          ]
+        },
+        {
+          "name": "Bíceps scott máquina",
+          "sets": [
+            { "reps": "9-12", "kg": 18, "rest": 100 },
+            { "reps": "9-12", "kg": 22, "rest": 100 },
+            { "reps": "9-12", "kg": 22, "rest": 100 }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "type": "musculacao",
+      "name": "Lower 1",
+      "exercises": [
+        {
+          "name": "Agachamento Hack",
+          "sets": [
+            { "reps": "10-12", "kg": 40, "rest": 30 },
+            { "reps": "6", "kg": 70, "rest": 45 },
+            { "reps": "9-12", "kg": 90, "rest": 120 },
+            { "reps": "9-12", "kg": 90, "rest": 120 },
+            { "reps": "9-12", "kg": 90, "rest": 120 }
+          ]
+        },
+        {
+          "name": "Elevação pélvica máquina",
+          "sets": [
+            { "reps": "9-12", "kg": 60, "rest": 100 },
+            { "reps": "9-12", "kg": 80, "rest": 100 },
+            { "reps": "9-12", "kg": 80, "rest": 100 },
+            { "reps": "9-12", "kg": 80, "rest": 100 }
+          ]
+        },
+        {
+          "name": "Cadeira extensora unilateral",
+          "sets": [
+            { "reps": "9-12", "kg": 25, "rest": 100 },
+            { "reps": "9-12", "kg": 30, "rest": 100 },
+            { "reps": "9-12", "kg": 30, "rest": 100 }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "type": "corrida",
+      "name": "Corrida",
+      "exercises": []
+    },
+    {
+      "day": 4,
+      "type": "musculacao",
+      "name": "Upper 2",
+      "exercises": [
+        {
+          "name": "Puxada alta pegada aberta",
+          "sets": [
+            { "reps": "10-12", "kg": 30, "rest": 30 },
+            { "reps": "6", "kg": 45, "rest": 45 },
+            { "reps": "9-12", "kg": 60, "rest": 120 },
+            { "reps": "9-12", "kg": 60, "rest": 120 }
+          ]
+        },
+        {
+          "name": "Desenvolvimento máquina",
+          "sets": [
+            { "reps": "6", "kg": 20, "rest": 60 },
+            { "reps": "9-12", "kg": 30, "rest": 100 },
+            { "reps": "9-12", "kg": 30, "rest": 100 }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "type": "musculacao",
+      "name": "Lower 2",
+      "exercises": [
+        {
+          "name": "Agachamento pêndulo",
+          "sets": [
+            { "reps": "10-12", "kg": 40, "rest": 30 },
+            { "reps": "6", "kg": 70, "rest": 45 },
+            { "reps": "9-12", "kg": 90, "rest": 120 }
+          ]
+        },
+        {
+          "name": "Mesa flexora",
+          "sets": [
+            { "reps": "6", "kg": 30, "rest": 60 },
+            { "reps": "9-12", "kg": 40, "rest": 100 },
+            { "reps": "9-12", "kg": 40, "rest": 100 }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "type": "corrida",
+      "name": "Corrida",
+      "exercises": []
+    }
+  ]
+}

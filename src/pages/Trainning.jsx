@@ -1,44 +1,21 @@
-function Trainning(){
-    return(
-        <main class="container">
+import { useParams } from "react-router";
+import workout from "../data/workout.json";
+import ExerciseCard from "../components/ExerciseCard";
 
-    <section class="day-selector">
-      <label for="day">Escolha o dia:</label>
-      <select id="day">
-        <option>Segunda - Peito</option>
-        <option>Terça - Costas</option>
-        <option>Quarta - Pernas</option>
-        <option>Quinta - Ombro</option>
-        <option>Sexta - Braço</option>
-      </select>
-      <button class="btn-primary">Ver Treino</button>
-    </section>
+function Trainning() {
+  let { day } = useParams();
 
-    <section class="workout-card">
-      <h2>Treino do Dia</h2>
+  const today = workout.cycle_days[day];
 
-      <div class="exercise-list">
+  return (
+    <div className="workout-card">
+      <h1>{today.name}</h1>
 
-        <div class="exercise">
-          <span class="exercise-name">Supino Reto</span>
-          <span class="exercise-info">4x8</span>
-        </div>
-
-        <div class="exercise">
-          <span class="exercise-name">Supino Inclinado</span>
-          <span class="exercise-info">3x10</span>
-        </div>
-
-        <div class="exercise">
-          <span class="exercise-name">Crossover</span>
-          <span class="exercise-info">3x12</span>
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-    )
+      {today.exercises.map((exercise, index) => (
+        <ExerciseCard key={index} exercise={exercise} />
+      ))}
+    </div>
+  );
 }
 
 export default Trainning;
