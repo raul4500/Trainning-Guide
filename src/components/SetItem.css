@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+.set-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #ff8566;
+  border: 1px solid #272727;
+  border-radius: 8px;
+  padding: 12px 16px;
+  transition: background 0.25s, border-color 0.25s, opacity 0.25s;
+}
+
+.set-item--done {
+  opacity: 0.45;
+  background: #191f18;
+  border-color: rgba(255, 80, 30, 0.15);
+}
+
+/* ── Série label ── */
+.set-item__index {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #444;
+  min-width: 52px;
+}
+
+/* ── Stats cluster ── */
+.set-item__stats {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.set-item__stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 36px;
+}
+
+.set-item__stat-value {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
+  line-height: 1;
+  color: #f0ece4;
+  letter-spacing: 0.03em;
+}
+
+.set-item__stat-label {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #555;
+  margin-top: 2px;
+}
+
+.set-item__divider {
+  width: 1px;
+  height: 28px;
+  background: #2e2e2e;
+  flex-shrink: 0;
+}
+
+/* ── Button ── */
+.set-item__btn {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #0d0d0d;
+  background: #ff501e;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s, transform 0.1s;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.set-item__btn:hover {
+  background: #ff6a3d;
+}
+
+.set-item__btn:active {
+  transform: scale(0.96);
+}
+
+/* ── Checkmark ── */
+.set-item__check {
+  font-size: 16px;
+  color: #ff501e;
+  margin-left: auto;
+  flex-shrink: 0;
+}

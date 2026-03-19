@@ -1,41 +1,114 @@
-.exercise-card{
-  background:#1e1e1e;
-  padding:20px;
-  border-radius:10px;
-  margin-bottom:20px;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+.exercise-card {
+  background: #161616;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 24px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-.set{
-  display:flex;
-  justify-content:space-between;
-  margin-top:10px;
+.exercise-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(to right, #ff501e, transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
-.set.done{
-  opacity:0.5;
-  text-decoration:line-through;
+.exercise-card:hover {
+  border-color: #3a3a3a;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
 }
 
+.exercise-card:hover::before {
+  opacity: 1;
+}
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+.exercise-card--done {
+  border-color: rgba(255, 80, 30, 0.35);
+  background: #161a15;
+}
+
+.exercise-card--done::before {
+  opacity: 1;
+  background: linear-gradient(to right, #ff501e, #ff9500);
+}
+
+/* ── Header ── */
+.exercise-card__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.exercise-card__number {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 36px;
+  line-height: 1;
+  color: #ff4f4f;
+  min-width: 42px;
+  user-select: none;
+}
+
+.exercise-card__title-wrap {
+  flex: 1;
+}
+
+.exercise-card__name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 26px;
+  letter-spacing: 0.04em;
+  color: #f0ece4;
+  margin: 0 0 4px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.exercise-card__sets-label {
+  font-size: 11px;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #fdfdfd;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #aaaaaa;
 }
 
-td, th{
-    margin: 0;
-    border: 1px solid purple;
-    align-items: center;
-    padding: 4px;
-    text-align: center;
+.exercise-card__done-badge {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  color: #ff501e;
+  border: 1px solid rgba(255, 80, 30, 0.4);
+  border-radius: 4px;
+  padding: 3px 8px;
+  white-space: nowrap;
+  margin-top: 2px;
+}
+
+/* ── Progress bar ── */
+.exercise-card__progress-bar {
+  height: 2px;
+  background: #2a2a2a;
+  border-radius: 99px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.exercise-card__progress-fill {
+  height: 100%;
+  background: linear-gradient(to right, #ff501e, #ff9500);
+  border-radius: 99px;
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── Sets ── */
+.exercise-card__sets {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+.training-page {
+  min-height: 100vh;
+  background-color: #0d0d0d;
+  background-image:
+    radial-gradient(ellipse at 10% 0%, rgba(255, 80, 30, 0.08) 0%, transparent 50%),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 60px,
+      rgba(255, 255, 255, 0.015) 60px,
+      rgba(255, 255, 255, 0.015) 61px
+    );
+  padding: 48px 20px 80px;
+  font-family: 'DM Sans', sans-serif;
+  color: #f0ece4;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* ── Header ── */
+.training-header {
+  margin-bottom: 48px;
+}
+
+.training-header-tag {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #ff501e;
+  margin-bottom: 10px;
+}
+
+.training-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(56px, 12vw, 88px);
+  line-height: 0.92;
+  letter-spacing: 0.02em;
+  color: #f0ece4;
+  margin: 0 0 16px;
+  text-transform: uppercase;
+}
+
+.training-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.training-count {
+  font-size: 13px;
+  font-weight: 500;
+  color: #888;
+  letter-spacing: 0.05em;
+}
+
+.header-line {
+  height: 1px;
+  background: linear-gradient(to right, #ff501e 0%, rgba(255,80,30,0.2) 40%, transparent 100%);
+}
+
+/* ── Exercise list ── */
+.exercises-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
