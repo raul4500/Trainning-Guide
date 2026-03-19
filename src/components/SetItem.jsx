@@ -4,13 +4,18 @@ function SetItem({ set, index, completed, finishSet }) {
 
     <div className={`set ${completed ? "done" : ""}`}>
 
-      <span>Série {index + 1}</span>
-
-      <span>{set.reps} reps</span>
-
-      <span>{set.kg} kg</span>
-
-      <span>{set.rest}s descanso</span>
+      <table>
+        <tr>
+          <th>REPS</th>
+          <th>CARGA</th>
+          <th>DESCANSO</th>
+        </tr>
+        <tr>
+          <td>{set.reps}</td>
+          <td>{set.kg} Kg</td>
+          <td>{set.rest} seg</td>
+        </tr>
+      </table>
 
       {!completed && (
         <button onClick={() => finishSet(index)}>
