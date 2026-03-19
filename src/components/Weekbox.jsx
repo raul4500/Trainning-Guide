@@ -1,22 +1,23 @@
-import './Weekbox.css'
+import './Weekbox.css';
 
 function Weekbox({ weekDaysArray }) {
-    return (
-        <div className="weekbox">
-            <div className="days">
-                {weekDaysArray.map((day, index) => (
-                    <div 
-                        key={index}
-                        className={day.isToday ? "today" : "day"}
-                    >
-                        <p>{day.name}</p>
-                        {day.isToday ? <div className="line"></div> : <div className="short-line"></div>}
-                        <p>{day.date}</p>
-                    </div>
-                ))}
-            </div>
-        </div>
-    );
+  return (
+    <section className="weekbox">
+      <div className="weekbox_label">ESTA SEMANA</div>
+      <div className="weekbox_days">
+        {weekDaysArray.map((day, index) => (
+          <div
+            key={index}
+            className={`weekbox_day ${day.isToday ? 'weekbox_day--today' : ''}`}
+          >
+            <span className="weekbox_day-name">{day.name}</span>
+            <span className="weekbox_day-num">{day.date}</span>
+            {day.isToday && <span className="weekbox_today-dot" />}
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 }
 
 export default Weekbox;

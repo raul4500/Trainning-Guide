@@ -1,12 +1,21 @@
-@import url("https://fonts.googleapis.com");
-@import url("https://fonts.gstatic.com");
-@import url("https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap');
 
-.logo{
-    font-family: "Changa One", sans-serif;
-    font-size: 40px;
-    font-style: normal;
-    padding: 24px;
-    justify-self: center;
-    color: rgb(255, 255, 255);
+header{
+  padding: 24px;
+  text-align: center;
+  height: 0px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
+  letter-spacing: 0.1e;
+}
+
+.header_logo {
+  margin: 0px;
+  
+  color: #f0ece4;
+}
+
+.header_logo span {
+  color: #ff501e;
+  margin-left: 6px;
 }

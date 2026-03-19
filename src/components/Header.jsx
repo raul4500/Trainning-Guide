@@ -1,11 +1,11 @@
-import './Header.css'
+import './Header.css';
 
 function Header() {
-    return(
-        <div className="logo">
-            TRAINNING GUIDE
-        </div>
-    )
+  return (
+    <header className="header">
+        <div className="header_logo">GYM<span>GUIDE</span></div>
+    </header>
+  );
 }
 
 export default Header;

@@ -1,44 +1,69 @@
-.weekbox{
-    padding: 16px;
-    border-radius: 8px;
-    border: 1px solid rgb(115, 115, 255);
-    justify-self: center;
-    width: 90%;
-    height: auto;
-    background-color: rgb(8, 18, 44);
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+.weekbox {
+  margin: 28px 0 24px;
 }
 
-.days{
-    display: flex;
-    justify-content: space-between;
+.weekbox_label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  color: #444;
+  text-transform: uppercase;
+  margin-bottom: 14px;
 }
 
-.day{
-    border-radius: 50px;
-    width: 48px;
-    height: auto;
-    justify-items: center;
+.weekbox_days {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
 }
 
-.today{
-    color:rgb(123, 123, 255);
-    border: 1px solid rgb(115, 115, 255);
-    background-color:rgb(0, 0, 0);
-    border-radius: 6px;
-    width: 48px;
-    height: auto;
-    justify-items: center;
-    padding-bottom: 4px;
+.weekbox_day {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 4px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  position: relative;
+  transition: background 0.2s;
 }
 
-.line{
-    border: 1px solid rgb(115, 115, 255);
-    width: 100%;
-    margin: 4px;
+.weekbox_day-name {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #444;
 }
 
-.short-line{
-    border: 1px solid rgb(115, 115, 255);
-    width: 60%;
-    margin: 4px;
+.weekbox_day-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+  line-height: 1;
+  color: #555;
+}
+
+/* Today state */
+.weekbox_day--today {
+  background: rgba(255, 80, 30, 0.08);
+  border-color: rgba(255, 80, 30, 0.3);
+}
+
+.weekbox_day--today .weekbox_day-name {
+  color: #ff501e;
+}
+
+.weekbox_day--today .weekbox_day-num {
+  color: #f0ece4;
+}
+
+.weekbox_today-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #ff501e;
 }

@@ -2,29 +2,44 @@ import './Todaysbox.css';
 import { Link } from 'react-router';
 import workout from "../data/workout.json";
 
-function TodaysBox({day}) {
+function TodaysBox({ day }) {
+  const today = workout.cycle_days[day];
+  const url = `/start/${day}`;
+  const totalSets = today.exercises.reduce((acc, ex) => acc + ex.sets.length, 0);
 
-    const today = workout.cycle_days[day];
+  return (
+    <div className="todaysbox">
 
-    const url = `/start/${day}`
-    return (
-        <div className="todaysbox">
-            <div className="buttons">
-                <div className="muscles">
-                    {today.name}
-                </div>
-                <button className="viewmore">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                    </svg>
-                </button>
-            </div>
-            
-            <Link to={url} className="start">Start</Link>
-            
-
+      <div className="todaysbox_header">
+        <div className="todaysbox_tag">TREINO DE HOJE</div>
+        <div className="todaysbox_stats">
+          <span>{today.exercises.length} exercícios</span>
+          <span className="todaysbox_stats-dot" />
+          <span>{totalSets} séries</span>
         </div>
-    )
-};
+      </div>
+
+      <h2 className="todaysbox_name">{today.name}</h2>
+
+      <div className="todaysbox_exercises">
+        {today.exercises.map((ex, i) => (
+          <div key={i} className="todaysbox_exercise-row">
+            <span className="todaysbox_exercise-num">{String(i + 1).padStart(2, '0')}</span>
+            <span className="todaysbox_exercise-name">{ex.name}</span>
+            <span className="todaysbox_exercise-sets">{ex.sets.length}x</span>
+          </div>
+        ))}
+      </div>
+
+      <Link to={url} className="todaysbox_start">
+        <span>Iniciar treino</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+      </Link>
+
+    </div>
+  );
+}
 
 export default TodaysBox;

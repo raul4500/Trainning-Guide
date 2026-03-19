@@ -1,39 +1,131 @@
-@import url("https://fonts.googleapis.com");
-@import url("https://fonts.gstatic.com");
-@import url("https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap');
 
-.todaysbox{
-    padding: 16px 24px;
-    margin-top: 24px;
-    border-radius: 8px;
-    border: 1px solid rgb(98, 54, 255);
-    justify-self: center;
-    width: 90%;
-    height: auto;
-    background-color: rgb(18, 18, 18);
-    display: block;
-    justify-content: space-between;
+.todaysbox {
+  background: #161616;
+  border: 1px solid #2a2a2a;
+  border-radius: 16px;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
 }
 
-.muscles{
-    font-family: "Changa One", sans-serif;
-    font-size: 30px;
-    font-style: normal;
+.todaysbox::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(to right, #ff501e, #ff9500 60%, transparent 100%);
 }
 
-.start, a{
-    color: white;
-    font-family: "Changa One", sans-serif;
-    font-style: normal;
-    background-color:rgb(98, 54, 255)
+/* ── Header ── */
+.todaysbox_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
-.viewmore{
-    background: none;
-    line-height: 40px;
+.todaysbox_tag {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #ff501e;
 }
 
-.buttons{
-    display: flex;
-    justify-content: space-between;
+.todaysbox_stats {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #555;
+  letter-spacing: 0.04em;
+}
+
+.todaysbox_stats-dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #444;
+}
+
+/* ── Name ── */
+.todaysbox_name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 46px;
+  line-height: 0.95;
+  letter-spacing: 0.03em;
+  color: #f0ece4;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+/* ── Exercise list ── */
+.todaysbox_exercises {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 24px;
+  border-top: 1px solid #222;
+}
+
+.todaysbox_exercise-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 0;
+  border-bottom: 1px solid #1e1e1e;
+}
+
+.todaysbox_exercise-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 16px;
+  color: #333;
+  min-width: 24px;
+}
+
+.todaysbox_exercise-name {
+  flex: 1;
+  font-size: 13px;
+  font-weight: 500;
+  color: #aaa;
+  letter-spacing: 0.02em;
+}
+
+.todaysbox_exercise-sets {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 16px;
+  color: #ff501e;
+  letter-spacing: 0.05em;
+}
+
+/* ── Start button ── */
+.todaysbox_start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 16px;
+  background: #ff501e;
+  color: #0d0d0d;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+  box-shadow: 0 4px 20px rgba(255, 80, 30, 0.25);
+}
+
+.todaysbox_start:hover {
+  background: #ff6a3d;
+  box-shadow: 0 6px 28px rgba(255, 80, 30, 0.4);
+}
+
+.todaysbox_start:active {
+  transform: scale(0.98);
 }
