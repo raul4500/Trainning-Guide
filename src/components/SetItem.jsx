@@ -3,7 +3,7 @@ import "./SetItem.css";
 function SetItem({ set, index, completed, finishSet }) {
   return (
     <div className={`set-item ${completed ? "set-item--done" : ""}`}>
-      <span className="set-item__index">Série {index + 1}</span>
+      <span className="set-item__index"> {index + 1}</span>
 
       <div className="set-item__stats">
         <div className="set-item__stat">

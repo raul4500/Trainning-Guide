@@ -24,7 +24,7 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #444;
-  min-width: 52px;
+  width: auto;
 }
 
 /* ── Stats cluster ── */
