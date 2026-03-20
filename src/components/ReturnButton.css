@@ -1,0 +1,26 @@
+.return {
+  position: fixed;
+  bottom: 24px;
+  width: fit-content;
+  padding: 16px;
+  background: #ff501e;
+  color: #0d0d0d;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+  box-shadow: 0 4px 20px rgba(255, 80, 30, 0.25);
+}
+
+.return:hover {
+  background: #ff6a3d;
+  box-shadow: 0 6px 28px rgba(255, 80, 30, 0.4);
+}
+
+.return:active {
+  transform: scale(0.98);
+}
