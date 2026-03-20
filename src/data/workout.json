@@ -138,17 +138,62 @@
         {
           "name": "Agachamento pêndulo",
           "sets": [
-            { "reps": "10-12", "kg": 40, "rest": 30 },
-            { "reps": "6", "kg": 70, "rest": 45 },
-            { "reps": "9-12", "kg": 90, "rest": 120 }
+            { "reps": "10-12", "kg": 10, "rest": 30 },
+            { "reps": "6", "kg": 15, "rest": 45 },
+            { "reps": "9-12", "kg": 20, "rest": 120 },
+            { "reps": "9-12", "kg": 20, "rest": 120 },
+            { "reps": "9-12", "kg": 20, "rest": 120 }
           ]
         },
         {
           "name": "Mesa flexora",
           "sets": [
-            { "reps": "6", "kg": 30, "rest": 60 },
-            { "reps": "9-12", "kg": 40, "rest": 100 },
-            { "reps": "9-12", "kg": 40, "rest": 100 }
+            { "reps": "6", "kg": 25, "rest": 60 },
+            { "reps": "9-12", "kg": 35, "rest": 100 },
+            { "reps": "9-12", "kg": 35, "rest": 100 },
+            { "reps": "9-12", "kg": 35, "rest": 100 }
+          ]
+        },
+        {
+          "name": "Cadeira extensora bilateral",
+          "sets": [
+            { "reps": "6", "kg": 35, "rest": 60 },
+            { "reps": "9-12", "kg": 50, "rest": 100 },
+            { "reps": "9-12", "kg": 50, "rest": 100 },
+            { "reps": "9-12", "kg": 50, "rest": 100 }
+          ]
+        },
+        {
+          "name": "Cadeira abdutora",
+          "sets": [
+            { "reps": "9-12", "kg": 30, "rest": 100 },
+            { "reps": "9-12", "kg": 30, "rest": 100 },
+            { "reps": "9-12", "kg": 30, "rest": 100 }
+          ]
+        },
+        {
+          "name": "Stiff",
+          "sets": [
+            { "reps": "6", "kg": 10, "rest": 60 },
+            { "reps": "9-12", "kg": 15, "rest": 100 },
+            { "reps": "9-12", "kg": 15, "rest": 100 },
+            { "reps": "9-12", "kg": 15, "rest": 100 }
+          ]
+        },
+        {
+          "name": "Panturrilha em pé",
+          "sets": [
+            { "reps": "9-12", "kg": 35, "rest": 100 },
+            { "reps": "9-12", "kg": 35, "rest": 100 },
+            { "reps": "9-12", "kg": 35, "rest": 100 }
+          ]
+        },
+        {
+          "name": "Abdominal máquina",
+          "sets": [
+            { "reps": "9-12", "kg": 20, "rest": 100 },
+            { "reps": "9-12", "kg": 20, "rest": 100 },
+            { "reps": "9-12", "kg": 20, "rest": 100 }
           ]
         }
       ]
