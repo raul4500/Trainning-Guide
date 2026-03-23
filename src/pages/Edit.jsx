@@ -45,7 +45,7 @@ function Edit() {
     fetchCycleDays();
   }
 
-  if (loading) return <div className="edit-page">Carregando...</div>;
+  if (loading) return <div className="edit-page"><div className="loader"></div></div>;
 
   return (
     <div className="edit-page">

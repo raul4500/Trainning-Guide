@@ -36,7 +36,7 @@ function Trainning() {
     fetchWorkout();
   }, [day]);
 
-  if (!cycleDay) return <div className="training-page"><div className="training-loader"></div></div>;
+  if (!cycleDay) return <div className="training-page"><div className="loader"></div></div>;
 
   return (
     <div className="training-page">
