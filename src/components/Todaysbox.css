@@ -17,15 +17,14 @@
   background: linear-gradient(to right, #ff501e, #ff9500 60%, transparent 100%);
 }
 
-/* ── Header ── */
-.todaysbox_header {
+.todaysbox__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
 }
 
-.todaysbox_tag {
+.todaysbox__tag {
   font-size: 10px;
   font-weight: 600;
   letter-spacing: 0.22em;
@@ -33,7 +32,7 @@
   color: #ff501e;
 }
 
-.todaysbox_stats {
+.todaysbox__stats {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -43,15 +42,14 @@
   letter-spacing: 0.04em;
 }
 
-.todaysbox_stats-dot {
+.todaysbox__stats-dot {
   width: 3px;
   height: 3px;
   border-radius: 50%;
   background: #444;
 }
 
-/* ── Name ── */
-.todaysbox_name {
+.todaysbox__name {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 46px;
   line-height: 0.95;
@@ -61,8 +59,7 @@
   margin-bottom: 24px;
 }
 
-/* ── Exercise list ── */
-.todaysbox_exercises {
+.todaysbox__exercises {
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -70,7 +67,7 @@
   border-top: 1px solid #222;
 }
 
-.todaysbox_exercise-row {
+.todaysbox__exercise-row {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -78,14 +75,14 @@
   border-bottom: 1px solid #1e1e1e;
 }
 
-.todaysbox_exercise-num {
+.todaysbox__exercise-num {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 16px;
   color: #333;
   min-width: 24px;
 }
 
-.todaysbox_exercise-name {
+.todaysbox__exercise-name {
   flex: 1;
   font-size: 13px;
   font-weight: 500;
@@ -93,15 +90,14 @@
   letter-spacing: 0.02em;
 }
 
-.todaysbox_exercise-sets {
+.todaysbox__exercise-sets {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 16px;
   color: #ff501e;
   letter-spacing: 0.05em;
 }
 
-/* ── Start button ── */
-.todaysbox_start {
+.todaysbox__start {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -119,13 +115,29 @@
   border-radius: 10px;
   transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
   box-shadow: 0 4px 20px rgba(255, 80, 30, 0.25);
+  margin-bottom: 10px;
 }
 
-.todaysbox_start:hover {
-  background: #ff6a3d;
-  box-shadow: 0 6px 28px rgba(255, 80, 30, 0.4);
+.todaysbox__start:hover { background: #ff6a3d; box-shadow: 0 6px 28px rgba(255,80,30,0.4); }
+.todaysbox__start:active { transform: scale(0.98); }
+
+.todaysbox__edit-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  width: 100%;
+  padding: 11px;
+  border-radius: 10px;
+  border: 1px solid #2a2a2a;
+  background: transparent;
+  color: #666;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s;
 }
 
-.todaysbox_start:active {
-  transform: scale(0.98);
-}
+.todaysbox__edit-link:hover { border-color: #ff501e; color: #ff501e; }

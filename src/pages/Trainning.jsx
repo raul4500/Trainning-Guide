@@ -12,9 +12,6 @@ function Trainning() {
 
   useEffect(() => {
     async function fetchWorkout() {
-      const test = await supabase.from("cycle_days").select("*");
-      console.log("teste direto:", test);
-
       const { data, error } = await supabase
         .from("cycle_days")
         .select(
@@ -23,7 +20,7 @@ function Trainning() {
         .eq('"order"', parseInt(day))
         .maybeSingle();
 
-      console.log("data:", data, "error:", error);
+      console.log("error:", error);
 
       data.exercises.sort((a, b) => a.order - b.order);
       data.exercises.forEach((ex) => ex.sets.sort((a, b) => a.order - b.order));
@@ -39,7 +36,7 @@ function Trainning() {
     fetchWorkout();
   }, [day]);
 
-  if (!cycleDay) return <div className="training-page">Carregando...</div>;
+  if (!cycleDay) return <div className="training-page"><div className="training-loader"></div></div>;
 
   return (
     <div className="training-page">
