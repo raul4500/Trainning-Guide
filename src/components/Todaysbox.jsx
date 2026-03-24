@@ -38,13 +38,6 @@ function TodaysBox() {
         </svg>
       </Link>
 
-      <Link to="/edit" className="todaysbox__edit-link">
-        <svg width="13" height="13" viewBox="0 0 16 16" fill="none">
-          <path d="M11.5 2.5a1.414 1.414 0 012 2L5 13H3v-2L11.5 2.5z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-        </svg>
-        Editar treinos
-      </Link>
-
     </div>
   );
 }
