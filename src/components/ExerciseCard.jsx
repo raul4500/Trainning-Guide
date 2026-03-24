@@ -100,7 +100,7 @@ function ExerciseCard({ exercise, index, workoutLogId, onLogCreated }) {
               key={set.id}
               className={`set-item ${completed ? "set-item--done" : ""}`}
             >
-              <span className="set-item__index">Série {i + 1}</span>
+              <span className="set-item__index">{i + 1}</span>
 
               <div className="set-item__stats">
                 <div className="set-item__stat">
@@ -142,7 +142,7 @@ function ExerciseCard({ exercise, index, workoutLogId, onLogCreated }) {
                   onClick={() => finishSet(i)}
                   disabled={isSaving}
                 >
-                  {isSaving ? "..." : "Concluir"}
+                  {isSaving ? "..." : "✓"}
                 </button>
               ) : (
                 <span className="set-item__check">✓</span>
